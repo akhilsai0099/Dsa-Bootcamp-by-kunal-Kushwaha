@@ -1,0 +1,21 @@
+import java.util.Locale;
+
+public class CheckIfTwoStringArraysareEquivalent {
+    public static void main(String[] args) {
+
+    }
+    static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+        StringBuilder sb1 = new StringBuilder();
+        StringBuilder sb2 = new StringBuilder();
+
+        for (int i = 0; i < word1.length; i++) {
+            sb1.append(word1[i]);
+        }
+        for (int i = 0; i < word2.length; i++) {
+            sb2.append(word2[i]);
+        }
+        String wd = sb1.toString();
+        String wd1 = sb2.toString();
+        return wd.equals(wd1);
+    }
+}
